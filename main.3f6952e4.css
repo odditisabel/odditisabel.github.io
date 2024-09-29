@@ -6199,8 +6199,8 @@ textarea {
 }
 
 .banner {
-    background-color: #5cb85c;
-    color: #333;
+    background-color: #4CAF50; /* 배너 배경색 */
+    color: white; /* 텍스트 색상 */
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
   }
