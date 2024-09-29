@@ -5696,7 +5696,8 @@ body.minimal {
 
 .hero-full-container h1 {
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 900
+    font-weight: 900;
+    padding-top: 70px;
 }
 
 .hero-full-container .hero-full-wrapper {
@@ -6196,5 +6197,19 @@ textarea {
     float: left;
     margin-right: 5px
 }
+
+.banner {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .banner-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 16px;
+    text-align: left;
+  }
 
 /*# sourceMappingURL=main.70a66962.map*/
