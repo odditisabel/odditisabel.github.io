@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="">
   <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  <meta name="author" content="Mashup templates have been developed by Orson.io team">
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -18,47 +18,56 @@
   <title>Yongwoo Lee</title>
 
   <link href="./main.3f6952e4.css" rel="stylesheet">
-  
   <style>
+    .hero-full-container {
+      background-image: url('./assets/images/main_dark.jpg');
+      background-size: cover; /* Cover the entire area */
+      background-position: center;
+      background-attachment: fixed; /* Fixed background on scroll */
+      background-repeat: no-repeat; /* Prevent background repeat */
+      height: auto; /* Adjust height automatically */
+      padding: 40px 0; /* Vertical padding */
+      color: white; /* Text color */
+    }
+
+    .text-content {
+      text-align: center; /* Center text alignment */
+      padding: 20px; /* Padding for text content */
+    }
+
+    /* Media queries for mobile responsiveness */
+    @media (max-width: 768px) {
       .hero-full-container {
-          background-image: url('./assets/images/main_dark.jpg');
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          background-repeat: no-repeat; /* Prevent repeating the background image */
-          height: 100vh;
-          padding: 40px 0;
-          color: white;
+        padding: 20px 10px; /* Reduce padding on mobile */
       }
 
-      .text-content {
-          text-align: center;
-          padding: 20px;
+      .text-content h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
       }
 
-      /* Responsive styles */
-      @media (max-width: 768px) {
-          .hero-full-container {
-              padding: 20px 0; /* Adjust padding for mobile */
-          }
-
-          .text-content h1 {
-              font-size: 2.5em; /* Adjust font size for mobile */
-          }
-
-          .text-content h2 {
-              font-size: 1.2em; /* Adjust font size for mobile */
-          }
-
-          iframe {
-              width: 100%; /* Make iframes take full width on mobile */
-              height: auto; /* Maintain aspect ratio */
-          }
-
-          .banner-content {
-              font-size: 1em; /* Adjust banner text size for mobile */
-          }
+      .text-content h2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
       }
+
+      .banner-content {
+        font-size: 16px; /* Adjust banner font size for mobile */
+      }
+
+      iframe {
+        width: 100%; /* Full width for iframes on mobile */
+        height: auto; /* Maintain aspect ratio */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text-content h1 {
+        font-size: 24px; /* Further reduce font size for very small screens */
+      }
+
+      .banner-content {
+        font-size: 14px; /* Further reduce banner font size */
+      }
+    }
   </style>
 </head>
 
@@ -67,9 +76,10 @@
   <div id="site-border-right"></div>
   <div id="site-border-top"></div>
   <div id="site-border-bottom"></div>
-  <!-- Add your content of header -->
+  
+  <!-- Header -->
   <header>
-    <nav class="navbar  navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
           aria-expanded="false">
@@ -80,7 +90,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav ">
+          <ul class="nav navbar-nav">
             <li><a href="./index.html" title="">Home</a></li>
             <li><a href="./about.html" title="">Bio/About</a></li>
             <li><a href="./works.html" title="">Works/Recordings</a></li>
@@ -91,74 +101,62 @@
       </div>
     </nav>
   </header>
-  <!-- Add your site or app content here -->
 
+  <!-- Main Content -->
   <div class="hero-full-container">
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12">
-                  <div class="hero-full-wrapper">
-                      <div class="text-content">
-                          <h1 style="color: white;">Yongwoo Lee
-                              <br>
-                              <span style="font-size: 40px; color: white;">Composer</span>
-                          </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+              <h1>Yongwoo Lee
+                <br>
+                <span style="font-size: 40px;">Composer</span>
+              </h1>
 
-                          <div class="banner">
-                              <div class="banner-content">
-                                  <strong>Upcoming Presentation!</strong> Presenter at IRCAM Forum 2024 in Seoul, November 6-8.
-                              </div>
-                          </div>
-
-                          <div style="position: relative; height: 0; padding-bottom: 30.25%; margin: 40px 0; width: 400px;">
-                              <iframe width="500" height="320" src="https://www.youtube.com/embed/LVZNo8wqeVM?si=r2scdKAZOlML2tJ9"
-                                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                  allowfullscreen style="position: absolute; width:100%; height:100%; left: 0;"></iframe>
-                          </div>
-
-                          <h2 style="font-size: 1.5em; margin-top: 40px; color: white;">Recent Works!</h2>
-                          <hr>
-
-                          <div style="display: flex; flex-direction: column; margin-top: 20px; margin-right: 50px;">
-                              <div style="width: 100%; margin-bottom: 20px;">
-                                  <iframe 
-                                      width="80%" 
-                                      height="300" 
-                                      src="https://www.youtube.com/embed/Nz8KFjiFmrE?si=bOZQ2xz1CEULpPN6" 
-                                      frameborder="0" 
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                      allowfullscreen>
-                                  </iframe>
-                              </div>
-                              <div style="width: 60%; margin-top: 20px; margin-bottom: 20px; margin-left: auto; text-align: right;">
-                                  <iframe 
-                                      width="100%" 
-                                      height="250" 
-                                      src="https://www.youtube.com/embed/tUL12WggQkA?si=oIzWsXjHHv_6NTH8" 
-                                      frameborder="0" 
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                      allowfullscreen>
-                                  </iframe>
-                              </div>
-                          </div>
-                          <br>
-                          <div style="margin-top: 20px; text-align: center;">
-                              <div style="width: 75%; margin: 0 auto; margin-bottom: 20px;">
-                                  <iframe 
-                                      width="100%" 
-                                      height="400" 
-                                      src="https://youtube.com/embed/Q2micuX9MBY?si=GCXY8PKiTcx379LD" 
-                                      frameborder="0" 
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                      allowfullscreen>
-                                  </iframe>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+              <div class="banner">
+                <div class="banner-content">
+                  <strong>Upcoming Presentation!</strong> Presenter at IRCAM Forum 2024 in Seoul, November 6-8.
+                </div>
               </div>
+
+              <div style="position: relative; height: 0; padding-bottom: 30.25%; margin: 40px 0;">
+                <iframe src="https://www.youtube.com/embed/LVZNo8wqeVM?si=r2scdKAZOlML2tJ9"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen style="position: absolute; width:100%; height:100%; left: 0;"></iframe>
+              </div>
+
+              <h2 style="margin-top: 40px;">Recent Works!</h2>
+              <hr>
+
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 100%; margin-bottom: 20px;">
+                  <iframe src="https://www.youtube.com/embed/Nz8KFjiFmrE?si=bOZQ2xz1CEULpPN6"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <div style="width: 60%; margin-top: 20px; margin-bottom: 20px; text-align: right;">
+                  <iframe src="https://www.youtube.com/embed/tUL12WggQkA?si=oIzWsXjHHv_6NTH8"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              <br>
+              <div style="margin-top: 20px; text-align: center;">
+                <div style="width: 75%; margin: 0 auto; margin-bottom: 20px;">
+                  <iframe src="https://youtube.com/embed/Q2micuX9MBY?si=GCXY8PKiTcx379LD"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
+    </div>
   </div>
 
   <script>
